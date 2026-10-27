@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "laya-guide": {
+      "command": "node",
+      "args": [
+        "mcp-server.mjs"
+      ]
+    }
+  }
+}

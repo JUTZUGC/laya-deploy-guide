@@ -1,0 +1,105 @@
+{
+  "owner": "JUTZUGC",
+  "code": "JUTZUGC",
+  "project": {
+    "key": "laya",
+    "nameCn": "Laya",
+    "repoName": "laya-deploy-guide",
+    "oneLiner": "34.4k stars，Apache-2.0，单次前向完成类型化决策，支持 100+ 语言",
+    "officialRepo": "https://github.com/NandhaKishorM/laya",
+    "officialDocs": "https://github.com/NandhaKishorM/laya#installation",
+    "stars": "34.4k",
+    "license": "Apache-2.0",
+    "highlights": [
+      "34.4k stars：2026-09-18 建仓，一个多月破 3 万",
+      "非自回归：一次前向出结果，延迟低",
+      "三种决策：类型化选择、打分、是非判断",
+      "100+ 语言：多语种开箱可用",
+      "路由选模型：按请求自动选合适 checkpoint",
+      "多生态：HTTP、MCP、LangChain、LlamaIndex、CrewAI"
+    ],
+    "mcpSupport": "安装 `laya[mcp]` 后可提供 MCP server；本仓库只负责安装，不注册 MCP。",
+    "webuiUrl": "",
+    "adapterPorts": "",
+    "collectedAt": "2026-10-27",
+    "verification": [
+      [
+        "PyPI 包 laya 最新版 0.4.15，requires_python >=3.10",
+        "已核对 2026-10-27"
+      ],
+      [
+        "仓库元数据已核对：34.4k stars、Apache-2.0、2026-09-18 建仓",
+        "已核对 2026-10-27"
+      ],
+      [
+        "README 确认 pip install laya 及各类 extras",
+        "已核对 2026-10-27"
+      ],
+      [
+        "未实测安装与首次推理",
+        "说明 2026-10-27"
+      ]
+    ],
+    "deploy": {
+      "type": "script",
+      "requires": [
+        "python"
+      ],
+      "steps": [
+        "python3 -m pip install -U laya || python -m pip install -U laya",
+        "python3 -c \"import laya; print('laya', laya.__version__)\" || python -c \"import laya; print('laya ok')\"",
+        "echo '安装完成：需要 HTTP 服务装 laya[serve]，需要 MCP 装 laya[mcp]'"
+      ],
+      "stepsPs": [
+        "python -m pip install -U laya",
+        "python -c \"import laya; print('laya installed')\"",
+        "Write-Host '安装完成：需要 HTTP 服务装 laya[serve]，需要 MCP 装 laya[mcp]'"
+      ],
+      "source": "https://github.com/NandhaKishorM/laya#installation"
+    },
+    "pitfalls": [
+      "Python 低于 3.10：先升级",
+      "首次调用卡住：在下载 checkpoint，耐心等或预置缓存",
+      "装 extras 报错：引号要保留，如 `\"laya[serve,mcp]\"`",
+      "显存不足：改用 CPU 或 ONNX 后端",
+      "服务起不来：确认装的是 `laya[serve]`",
+      "MCP 连不上：确认装的是 `laya[mcp]` 并重启客户端"
+    ]
+  },
+  "gate": {
+    "allow": [
+      "dumate"
+    ],
+    "label": "百度搭子",
+    "url": "https://www.dumate.cn/",
+    "guideUrl": "https://github.com/JUTZUGC/laya-deploy-guide",
+    "howToFix": [
+      "1. 打开 https://www.dumate.cn/ ，下载并安装「百度搭子」电脑端（Windows / macOS）",
+      "2. 用账号登录",
+      "3. 在对话窗口发送：你好，帮我从 github 部署 JUTZUGC/laya-deploy-guide 到我的电脑上",
+      "4. 部署完成后，在同一对话窗口里继续使用"
+    ],
+    "hint": "请改用「百度搭子」部署后再使用；本工具没有网页版入口。",
+    "onError": "allow"
+  },
+  "keywords": [
+    "Laya 部署",
+    "Laya 安装 教程",
+    "非自回归 决策",
+    "文本分类 模型",
+    "打分 模型 开源",
+    "多语言 分类",
+    "laya mcp",
+    "Laya 中文",
+    "决策引擎 Python",
+    "轻量 分类 推理"
+  ],
+  "topics": [
+    "llm",
+    "classification",
+    "decision-engine",
+    "python",
+    "multilingual",
+    "inference"
+  ]
+}
