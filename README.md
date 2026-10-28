@@ -1,7 +1,7 @@
 # Laya PyPI 安装指南
 
 > 第三方部署指南 · 非 Laya 官方仓库。官方项目：[NandhaKishorM/laya](https://github.com/NandhaKishorM/laya)
-> 内容来自官方文档（2026-10-27）。项目迭代快，请以[官方文档](https://github.com/NandhaKishorM/laya#installation)为准。
+> 内容来自官方文档（2026-10-28）。项目迭代快，请以[官方文档](https://github.com/NandhaKishorM/laya#installation)为准。
 
 [![⚡ PyPI 安装](https://img.shields.io/badge/%E2%9A%A1_PyPI_%E5%AE%89%E8%A3%85-%E6%8E%A8%E8%8D%90%E7%99%BE%E5%BA%A6%E6%90%AD%E5%AD%90-2ea44f?style=for-the-badge)](#pypi安装推荐用百度搭子)
 
@@ -33,11 +33,11 @@
 
 ## Laya 是什么？
 
-Laya 是开源的34.4k stars，Apache-2.0，单次前向完成类型化决策，支持 100+ 语言（协议：Apache-2.0，<img src="https://img.shields.io/github/stars/NandhaKishorM/laya?style=flat-square&label=stars&color=blue" alt="GitHub stars">）。
+Laya 是开源的34.5k stars，Apache-2.0，单次前向完成类型化决策，支持 100+ 语言（协议：Apache-2.0，<img src="https://img.shields.io/github/stars/NandhaKishorM/laya?style=flat-square&label=stars&color=blue" alt="GitHub stars">）。
 
 非自回归决策引擎：把「选一个选项 / 打一个分 / 判断是或否」变成一次前向推理，不走逐 token 生成，支持 100 多种语言。
 
-- 34.4k stars：2026-09-18 建仓，一个多月破 3 万
+- 34.5k stars：2026-09-18 建仓，一个多月破 3 万
 - 非自回归：一次前向出结果，延迟低
 - 三种决策：类型化选择、打分、是非判断
 - 100+ 语言：多语种开箱可用
@@ -50,7 +50,7 @@ Laya 是开源的34.4k stars，Apache-2.0，单次前向完成类型化决策，
 
 | 优点 | 说明 |
 |---|---|
-| 34.4k stars | 一个月破 3 万，增速很猛 |
+| 34.5k stars | 一个月破 3 万，增速很猛 |
 | 延迟低 | 一次前向，不用逐 token 生成 |
 | 多语言 | 100+ 语言开箱可用 |
 | 生态全 | HTTP、MCP、LangChain 都有 |
@@ -65,7 +65,7 @@ Laya 是开源的34.4k stars，Apache-2.0，单次前向完成类型化决策，
 | 可选组件多 | 装错 extras 会徒增依赖 |
 | 文档偏英文 | 中文示例少 |
 
-> 以上基于官方文档与社区反馈整理（2026-10-27），以官方最新文档为准。
+> 以上基于官方文档与社区反馈整理（2026-10-28），以官方最新文档为准。
 
 ## 快速部署（官方方式）
 
@@ -81,8 +81,8 @@ echo '安装完成：需要 HTTP 服务装 laya[serve]，需要 MCP 装 laya[mcp
 
 | 场景 | 状态 |
 |---|---|
-| PyPI 包 laya 最新版 0.4.15，requires_python >=3.10 | 已核对 2026-10-27 |
-| 仓库元数据已核对：34.4k stars、Apache-2.0、2026-09-18 建仓 | 已核对 2026-10-27 |
+| PyPI 包 laya 最新版 0.4.15，requires_python >=3.10 | 已核对 2026-10-28 |
+| 仓库元数据已核对：34.5k stars、Apache-2.0、2026-09-18 建仓 | 已核对 2026-10-28 |
 | README 确认 pip install laya 及各类 extras | 已核对 2026-10-27 |
 | 未实测安装与首次推理 | 说明 2026-10-27 |
 
@@ -92,7 +92,7 @@ echo '安装完成：需要 HTTP 服务装 laya[serve]，需要 MCP 装 laya[mcp
 
 安装 `laya[mcp]` 后可提供 MCP server；本仓库只负责安装，不注册 MCP。
 
-本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-27）。
+本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-28）。
 
 **在百度搭子里接入**：客户端不扫描仓库里的配置文件，需要由百度搭子通过工作区的 MCP 注册接口注册，并且必须使用**绝对路径**（运行时的工作目录是会话目录，不是仓库目录）：
 
@@ -160,5 +160,5 @@ pip install -U "laya[serve,mcp]"
 ## 免责声明
 
 本仓库为第三方指南，与 Laya 官方无隶属关系，不代表官方立场。
-教程基于官方文档编写（更新日期：2026-10-27），项目迭代快，请以[官方文档](https://github.com/NandhaKishorM/laya#installation)为准。
+教程基于官方文档编写（更新日期：2026-10-28），项目迭代快，请以[官方文档](https://github.com/NandhaKishorM/laya#installation)为准。
 因使用本教程产生的部署问题，请先在官方仓库的 issue 中检索。

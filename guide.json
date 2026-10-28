@@ -5,13 +5,13 @@
     "key": "laya",
     "nameCn": "Laya",
     "repoName": "laya-deploy-guide",
-    "oneLiner": "34.4k stars，Apache-2.0，单次前向完成类型化决策，支持 100+ 语言",
+    "oneLiner": "34.5k stars，Apache-2.0，单次前向完成类型化决策，支持 100+ 语言",
     "officialRepo": "https://github.com/NandhaKishorM/laya",
     "officialDocs": "https://github.com/NandhaKishorM/laya#installation",
-    "stars": "34.4k",
+    "stars": "34.5k",
     "license": "Apache-2.0",
     "highlights": [
-      "34.4k stars：2026-09-18 建仓，一个多月破 3 万",
+      "34.5k stars：2026-09-18 建仓，一个多月破 3 万",
       "非自回归：一次前向出结果，延迟低",
       "三种决策：类型化选择、打分、是非判断",
       "100+ 语言：多语种开箱可用",
@@ -21,15 +21,15 @@
     "mcpSupport": "安装 `laya[mcp]` 后可提供 MCP server；本仓库只负责安装，不注册 MCP。",
     "webuiUrl": "",
     "adapterPorts": "",
-    "collectedAt": "2026-10-27",
+    "collectedAt": "2026-10-28",
     "verification": [
       [
         "PyPI 包 laya 最新版 0.4.15，requires_python >=3.10",
-        "已核对 2026-10-27"
+        "已核对 2026-10-28"
       ],
       [
-        "仓库元数据已核对：34.4k stars、Apache-2.0、2026-09-18 建仓",
-        "已核对 2026-10-27"
+        "仓库元数据已核对：34.5k stars、Apache-2.0、2026-09-18 建仓",
+        "已核对 2026-10-28"
       ],
       [
         "README 确认 pip install laya 及各类 extras",
